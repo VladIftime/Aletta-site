@@ -1660,7 +1660,7 @@ class TeamComponent {
     }
 }
 TeamComponent.ɵfac = function TeamComponent_Factory(t) { return new (t || TeamComponent)(); };
-TeamComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: TeamComponent, selectors: [["app-team"]], decls: 69, vars: 0, consts: [["id", "team", 1, "section", "stacked-blue-waves"], [1, "container"], [1, "row", "justify-content-center", "text-center"], [1, "col-lg-12"], [1, "ti-user", "title-icon", "text-muted"], [1, "title"], [1, "fw-bold"], [1, "row", "justify-content-md-center", "mt-5"], [1, "col-lg-4"], [1, "text-center", "bg-white", "team-box", "mt-3", "active", "p-5"], [1, ""], ["src", "assets/images/fennie.jpg", "alt", "", "width", "80px", 1, "img-fluid", "rounded-circle", "mx-auto", "d-block"], [1, "team-name"], [1, "fw-bold", "mb-0", "mt-4"], [1, "text-muted", "mt-4"], [1, "list-inline", "team-social", "mt-4", "mb-0"], [1, "list-inline-item"], ["href", "#"], [1, "ti-linkedin"], ["src", "assets/images/alexandra.jpg", "width", "80px", "alt", "", 1, "img-fluid", "rounded-circle", "mx-auto", "d-block"], ["src", "assets/images/naila.jpg", "width", "80px", "alt", "", 1, "img-fluid", "rounded-circle", "mx-auto", "d-block"], ["src", "assets/images/vlad.jpg", "width", "80px", "alt", "", 1, "img-fluid", "rounded-circle", "mx-auto", "d-block"], [1, "ti-github"]], template: function TeamComponent_Template(rf, ctx) { if (rf & 1) {
+TeamComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: TeamComponent, selectors: [["app-team"]], decls: 69, vars: 0, consts: [["id", "team", 1, "section", "stacked-blue-waves"], [1, "container"], [1, "row", "justify-content-center", "text-center"], [1, "col-lg-12"], [1, "ti-user", "title-icon", "text-muted"], [1, "title"], [1, "fw-bold"], [1, "row", "justify-content-md-center", "mt-5"], [1, "col-lg-3"], [1, "text-center", "bg-white", "team-box", "mt-3", "active"], [1, ""], ["src", "assets/images/fennie.jpg", "alt", "", "width", "80px", 1, "img-fluid", "rounded-circle", "mx-auto", "d-block"], [1, "team-name"], [1, "fw-bold", "mb-0", "mt-4"], [1, "text-muted", "mt-4"], [1, "list-inline", "team-social", "mt-4", "mb-0"], [1, "list-inline-item"], ["href", "#"], [1, "ti-linkedin"], ["src", "assets/images/alexandra.jpg", "width", "80px", "alt", "", 1, "img-fluid", "rounded-circle", "mx-auto", "d-block"], [1, "socials"], ["src", "assets/images/naila.jpg", "width", "80px", "alt", "", 1, "img-fluid", "rounded-circle", "mx-auto", "d-block"], ["src", "assets/images/vlad.jpg", "width", "80px", "alt", "", 1, "img-fluid", "rounded-circle", "mx-auto", "d-block"], [1, "ti-github"]], template: function TeamComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -1712,7 +1712,7 @@ TeamComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, " MSc Chemistry ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "div", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "div", 20);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "ul", 15);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "li", 16);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "a", 17);
@@ -1726,7 +1726,7 @@ TeamComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "div", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "div", 9);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "div", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](41, "img", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](41, "img", 21);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "div", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "p", 13);
@@ -1750,7 +1750,7 @@ TeamComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "div", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "div", 9);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "div", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](55, "img", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](55, "img", 22);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "div", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "p", 13);
@@ -1764,7 +1764,7 @@ TeamComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](62, "ul", 15);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "li", 16);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "a", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](65, "i", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](65, "i", 23);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](66, "li", 16);
@@ -1836,4 +1836,4 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.platformBrowser().bootstr
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=main.39d36018fb5bbbfd5609.js.map
+//# sourceMappingURL=main.56cef9bce4b8114ae702.js.map
