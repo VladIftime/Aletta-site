@@ -16,10 +16,10 @@ export class FeaturesComponent implements OnInit {
   ngOnInit(): void {}
   options_industry: AnimationOptions = {
     path:
-      '/assets/animations/Chat Bot Animation/Chat Bot Coloured/Chatbot Colour Animation.json',
+      'assets/animations/Chat Bot Animation/Chat Bot Coloured/Chatbot Colour Animation.json',
   }
   options_academic: AnimationOptions = {
-    path: '/assets/animations/Blogging Minimalistic/Blogging.json',
+    path: 'assets/animations/Blogging Minimalistic/Blogging.json',
   }
 
   animationCreated(animationItem: AnimationItem): void {
