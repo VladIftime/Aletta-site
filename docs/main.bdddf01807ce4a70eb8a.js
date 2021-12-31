@@ -548,11 +548,6 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: '',
-        redirectTo: 'index-8',
-        pathMatch: 'full'
-    },
-    {
-        path: 'index-8',
         component: _index8_index8_component__WEBPACK_IMPORTED_MODULE_0__.Index8Component
     },
     {
@@ -2390,4 +2385,4 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.platformBrowser().bootstr
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=main.7bb5516cf14d146d11d1.js.map
+//# sourceMappingURL=main.bdddf01807ce4a70eb8a.js.map
