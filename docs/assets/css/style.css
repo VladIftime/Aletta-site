@@ -60,7 +60,7 @@ p {
 }
 
 .section {
-  padding-top: 80px;
+  padding-top: 1rem;
   padding-bottom: 80px;
   position: relative;
   background: #ffffff;
@@ -1809,7 +1809,7 @@ textarea.form-control {
 }
 
 .footer-terms li a:hover {
-  color: #ffffff !important;
+  color: #000000 !important;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -1817,7 +1817,7 @@ textarea.form-control {
 .footer-terms li:after {
   content: '|';
   margin: 0 20px;
-  color: #757575;
+  color: #000000;
 }
 
 .bg-login {
