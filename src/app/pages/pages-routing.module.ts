@@ -9,11 +9,6 @@ import { SignupComponent } from './signup/signup.component';
 const routes: Routes = [
     {
         path: '',
-        redirectTo: 'index-8',
-        pathMatch: 'full'
-    },
-    {
-        path: 'index-8',
         component: Index8Component
     },
     {
