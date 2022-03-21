@@ -52,3 +52,11 @@ hr {
   max-width: fit-content;
   padding: 0.01rem;
 }
+
+.icons-image{
+  width: 25%;
+}
+
+.filter{
+  filter: invert(26%) sepia(59%) saturate(1676%) hue-rotate(195deg) brightness(91%) contrast(97%);
+}
