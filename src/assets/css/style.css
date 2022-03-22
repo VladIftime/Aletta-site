@@ -1421,7 +1421,7 @@ b {
 /*---NAVBAR LIGHT--*/
 .navbar-custom.navbar-light {
   background-color: #ffffff !important;
-  padding: 20px 0;
+  padding: 0px 0;
   -webkit-box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
 }
@@ -1460,7 +1460,7 @@ b {
 
 .nav-sticky.navbar-custom.sticky-dark {
   background-color: #1a1a1a;
-  padding: 15px 0px;
+  padding: 0px 0px;
 }
 
 .nav-sticky .navbar-nav li a {

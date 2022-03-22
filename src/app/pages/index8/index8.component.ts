@@ -170,10 +170,10 @@ export class Index8Component implements OnInit {
       document.documentElement.scrollTop > 40
     ) {
       navbar.style.backgroundColor = '#1a1a1a';
-      navbar.style.padding = '15px 0px';
+      navbar.style.padding = '0px 0px';
     } else {
       navbar.style.backgroundColor = '';
-      navbar.style.padding = '20px';
+      navbar.style.padding = '5px';
     }
   }
 
