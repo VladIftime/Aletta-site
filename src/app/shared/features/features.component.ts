@@ -21,6 +21,9 @@ export class FeaturesComponent implements OnInit {
   options_academic: AnimationOptions = {
     path: 'assets/animations/Blogging Minimalistic/Blogging.json',
   }
+  options_patients: AnimationOptions = {
+    path: '/assets/animations/Chatting Using Apps Animation/Colour/Chating using apps Colour.json',
+  }
 
   animationCreated(animationItem: AnimationItem): void {
     console.log(animationItem)
