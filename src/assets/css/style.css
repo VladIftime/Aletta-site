@@ -60,7 +60,6 @@ p {
 }
 
 .section {
-  padding-top: 1rem;
   padding-bottom: 80px;
   position: relative;
   background: #ffffff;
@@ -1696,13 +1695,7 @@ b {
   border-radius: 10px;
 }
 
-.mission-box {
-  -webkit-box-shadow: 0px 0px 20px -4px #e8e8e8;
-  box-shadow: 0px 0px 20px -4px #e8e8e8;
-  padding: 1rem;
-  border-radius: 10px;
-  background: #fff;
-}
+
 
 .bg-client {
   background-image: url('../images/cartographer.png');

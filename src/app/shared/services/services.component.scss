@@ -1,0 +1,112 @@
+body{margin-top:20px;}
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #FEDE5B;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #FEDE5B;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+    }
+}
+
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEDE5B
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #FEDE5B;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
+
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+  padding-top: 2rem;
+}
+
+.mission{
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+// make the background color of the section blue
+.section-blue{
+  background-color: #59B1E3;
+}
+
+.mission-box {
+  -webkit-box-shadow: 0px 0px 20px -4px #e8e8e8;
+  box-shadow: 0px 0px 20px -4px #e8e8e8;
+  padding: 1.5rem 10rem ;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  border-radius: 10px;
+  background: #fff;
+}
+
+// center the icon
+.mission-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// center the text
+.mission-box-title {
+  text-align: center;
+}
+
+// larger font size with space between lines
+.mission-box-text-big {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
