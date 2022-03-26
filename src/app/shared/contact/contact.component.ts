@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import anime from 'animejs/lib/anime.es';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { ContactModel } from '../model.ts/contact-model';
+import { ContactService } from '../../contact.service';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -10,9 +13,19 @@ import anime from 'animejs/lib/anime.es';
  * Contact component
  */
 export class ContactComponent implements OnInit {
-  constructor() {}
+
+  FormData: FormGroup;
+
+  constructor(private builder: FormBuilder, private contact: ContactService) {}
 
   ngOnInit(): void {
+
+    this.FormData = this.builder.group({
+      Fullname: new FormControl('', [Validators.required]),
+      Email: new FormControl('', [Validators.required, Validators.email]),
+      Comment: new FormControl('', [Validators.required]),
+    });
+
     const wave1 = [
       'M0 104L14.5 93.2C29 82.3 58 60.7 87.2 56.2C116.3 51.7 145.7 64.3 174.8 65.2C204 66 233 55 262 59.5C291 64 320 84 349 83.2C378 82.3 407 60.7 436.2 52.5C465.3 44.3 494.7 49.7 523.8 55C553 60.3 582 65.7 611 69.3C640 73 669 75 698 72.3C727 69.7 756 62.3 785.2 65C814.3 67.7 843.7 80.3 872.8 89.3C902 98.3 931 103.7 945.5 106.3L960 109L960 0L945.5 0C931 0 902 0 872.8 0C843.7 0 814.3 0 785.2 0C756 0 727 0 698 0C669 0 640 0 611 0C582 0 553 0 523.8 0C494.7 0 465.3 0 436.2 0C407 0 378 0 349 0C320 0 291 0 262 0C233 0 204 0 174.8 0C145.7 0 116.3 0 87.2 0C58 0 29 0 14.5 0L0 0Z',
       'M0 125L14.5 114.2C29 103.3 58 81.7 87.2 77.2C116.3 72.7 145.7 85.3 174.8 91.7C204 98 233 98 262 91.7C291 85.3 320 72.7 349 79C378 85.3 407 110.7 436.2 118C465.3 125.3 494.7 114.7 523.8 109.3C553 104 582 104 611 97.7C640 91.3 669 78.7 698 83.2C727 87.7 756 109.3 785.2 112.8C814.3 116.3 843.7 101.7 872.8 91.7C902 81.7 931 76.3 945.5 73.7L960 71L960 0L945.5 0C931 0 902 0 872.8 0C843.7 0 814.3 0 785.2 0C756 0 727 0 698 0C669 0 640 0 611 0C582 0 553 0 523.8 0C494.7 0 465.3 0 436.2 0C407 0 378 0 349 0C320 0 291 0 262 0C233 0 204 0 174.8 0C145.7 0 116.3 0 87.2 0C58 0 29 0 14.5 0L0 0Z',
@@ -148,5 +161,16 @@ export class ContactComponent implements OnInit {
       duration: 30000,
       loop: true,
     });
+  }
+   onSubmit(FormData) {
+    console.log(FormData)
+    this.contact.PostMessage(FormData)
+      .subscribe(response => {
+        location.href = 'https://mailthis.to/confirm'
+        console.log(response)
+      }, error => {
+        console.warn(error.responseText)
+        console.log({ error })
+      })
   }
 }

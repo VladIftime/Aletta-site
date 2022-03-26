@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component'
 import { FooterComponent } from './footer/footer.component'
 import { ScrollspyDirective } from './scrollspy.directive'
 import { LottieModule } from 'ngx-lottie'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import player from 'lottie-web'
 
 // Note we need a separate function as it's required
@@ -31,13 +32,15 @@ export function playerFactory() {
     PricingComponent,
     ContactComponent,
     FooterComponent,
-    ScrollspyDirective,
+    ScrollspyDirective
+
   ],
   imports: [
     CommonModule,
     CarouselModule,
     ScrollToModule.forRoot(),
     LottieModule.forRoot({ player: playerFactory }),
+    ReactiveFormsModule
   ],
   exports: [
     ServicesComponent,
@@ -49,6 +52,7 @@ export function playerFactory() {
     ContactComponent,
     FooterComponent,
     ScrollspyDirective,
+    ReactiveFormsModule
   ],
 })
 export class SharedModule {}
