@@ -1,0 +1,12 @@
+.mail-button{
+  outline: #FEDE5B solid 0.25rem;
+  border-radius: 1rem;
+  max-width: fit-content;
+  padding: 0.5rem;
+
+}
+
+// make text larger
+.mail-button:hover{
+  font-size: 1.25rem;
+}
