@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "aletta-site-82068"
-  }
+    "default": "aletta-site-24e89",
+    "production": "aletta-site-24e89"
+  },
+  "targets": {}
 }
