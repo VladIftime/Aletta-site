@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { Index8Component } from './index8/index8.component';
+import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
 import { PasswordForgetComponent } from './password-forget/password-forget.component';
 import { SignupComponent } from './signup/signup.component';
@@ -9,7 +9,7 @@ import { SignupComponent } from './signup/signup.component';
 const routes: Routes = [
     {
         path: '',
-        component: Index8Component
+        component: LandingComponent
     },
     {
         path: 'login',

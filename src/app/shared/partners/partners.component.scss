@@ -1,0 +1,14 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+
+.slide-track {
+  animation: scroll 10s linear infinite;
+  display: flex;
+}

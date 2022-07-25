@@ -4,12 +4,12 @@ import { CommonModule } from '@angular/common'
 import { CarouselModule } from 'ngx-owl-carousel-o'
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to'
 
-import { ServicesComponent } from './services/services.component'
-import { FeaturesComponent } from './features/features.component'
-import { ClientComponent } from './client/client.component'
+import { EvolutionComponent } from './evolution/evolution.component'
+import { SolutionsComponent } from './solutions/solutions.component'
+import { PartnersComponent } from './partners/partners.component'
 import { TeamComponent } from './team/team.component'
-import { FaqComponent } from './faq/faq.component'
-import { PricingComponent } from './pricing/pricing.component'
+import { MissionComponent } from './mission/mission.component'
+import { ValuesComponent } from './values/values.component'
 import { ContactComponent } from './contact/contact.component'
 import { FooterComponent } from './footer/footer.component'
 import { ScrollspyDirective } from './scrollspy.directive'
@@ -24,12 +24,12 @@ export function playerFactory() {
 }
 @NgModule({
   declarations: [
-    ServicesComponent,
-    FeaturesComponent,
-    ClientComponent,
+    EvolutionComponent,
+    SolutionsComponent,
+    PartnersComponent,
     TeamComponent,
-    FaqComponent,
-    PricingComponent,
+    MissionComponent,
+    ValuesComponent,
     ContactComponent,
     FooterComponent,
     ScrollspyDirective
@@ -43,12 +43,12 @@ export function playerFactory() {
     ReactiveFormsModule
   ],
   exports: [
-    ServicesComponent,
-    FeaturesComponent,
-    ClientComponent,
+    EvolutionComponent,
+    SolutionsComponent,
+    PartnersComponent,
     TeamComponent,
-    FaqComponent,
-    PricingComponent,
+    MissionComponent,
+    ValuesComponent,
     ContactComponent,
     FooterComponent,
     ScrollspyDirective,

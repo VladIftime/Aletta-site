@@ -12,7 +12,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o'
 import { PagesRoutingModule } from './pages-routing.module'
 
 import { SharedModule } from '../shared/shared.module'
-import { Index8Component } from './index8/index8.component'
+import { LandingComponent } from './landing/landing.component'
 import { LoginComponent } from './login/login.component'
 import { PasswordForgetComponent } from './password-forget/password-forget.component'
 import { SignupComponent } from './signup/signup.component'
@@ -22,7 +22,7 @@ export function playerFactory() {
 }
 @NgModule({
   declarations: [
-    Index8Component,
+    LandingComponent,
     LoginComponent,
     PasswordForgetComponent,
     SignupComponent,
