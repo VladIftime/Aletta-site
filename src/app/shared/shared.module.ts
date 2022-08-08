@@ -15,7 +15,8 @@ import { FooterComponent } from './footer/footer.component'
 import { ScrollspyDirective } from './scrollspy.directive'
 import { LottieModule } from 'ngx-lottie'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import player from 'lottie-web'
+import player from 'lottie-web';
+import { ComparisonComponent } from './comparison/comparison.component'
 
 // Note we need a separate function as it's required
 // by the AOT compiler.
@@ -32,7 +33,8 @@ export function playerFactory() {
     ValuesComponent,
     ContactComponent,
     FooterComponent,
-    ScrollspyDirective
+    ScrollspyDirective,
+    ComparisonComponent
 
   ],
   imports: [
@@ -52,7 +54,8 @@ export function playerFactory() {
     ContactComponent,
     FooterComponent,
     ScrollspyDirective,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ComparisonComponent
   ],
 })
 export class SharedModule {}
