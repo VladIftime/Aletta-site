@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- STRAT NAVBAR -->
 <nav
   class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom sticky sticky-dark"
@@ -211,3 +212,218 @@
   <app-contact ></app-contact>
   <app-footer></app-footer>
 </div>
+=======
+<!-- STRAT NAVBAR -->
+<nav
+  class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom sticky sticky-dark"
+  id="navbar"
+  (window:scroll)="windowScroll()"
+>
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="assets/images/Aletta logo.svg" width="90" alt="" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      (click)="toggleMenu()"
+    >
+      <span class="ti-menu"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mx-auto" id="navbar-navlist">
+        <li class="nav-item" [ngClass]="{ active: currentSection === 'home' }">
+          <a
+            [ngxScrollTo]="'#home'"
+            class="nav-link"
+            href="javascript: void(0);"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          class="nav-item"
+          [ngClass]="{ active: currentSection === 'solutions' }"
+        >
+          <a
+            [ngxScrollTo]="'#solutions'"
+            class="nav-link"
+            href="javascript: void(0);"
+          >
+            Solutions
+          </a>
+        </li>
+        <li class="nav-item" [ngClass]="{ active: currentSection === 'team' }">
+          <a
+            [ngxScrollTo]="'#team'"
+            class="nav-link"
+            href="javascript: void(0);"
+          >
+            Team
+          </a>
+        </li>
+        <li class="nav-item" [ngClass]="{ active: currentSection === 'mission' }">
+          <a
+            [ngxScrollTo]="'#mission'"
+            class="nav-link"
+            href="javascript: void(0);"
+          >
+            Mission
+          </a>
+        </li>
+        <li class="nav-item" [ngClass]="{ active: currentSection === 'timeline' }">
+          <a
+            [ngxScrollTo]="'#timeline'"
+            class="nav-link"
+            href="javascript: void(0);"
+          >
+            Timeline
+          </a>
+        </li>
+      </ul>
+      <div>
+        <ul class="text-right list-unstyled list-inline mb-0">
+          <li
+            class="nav-item contact-button"
+            [ngClass]="{ active: currentSection === 'contact' }"
+          >
+            <a
+              [ngxScrollTo]="'#contact'"
+              class="nav-link"
+              href="javascript: void(0);"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- END NAVBAR -->
+<div
+  appScrollspy
+  [spiedTags]="['SECTION']"
+  (sectionChange)="onSectionChange($event)"
+>
+  <!-- START HOME -->
+  <section class="section bg-gradient half-home" style="z-index: 1;" id="home">
+    <div class="home-center">
+      <div class="home-desc-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="text-center">
+                <h1 class="text-white home-title mb-0 ">
+                  <p class="text-white home-title mb-0 fw-bold">Engage participants. Optimize data capture.  </p>
+                  <br>
+                  Advance clinical studies
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg
+    style="position: absolute; z-index: 1;"
+    height="100%"
+    width="100%"
+    preserveAspectRatio="none"
+    id="visual"
+    viewBox="0 0 960 137"
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    height="137"
+    version="1.1"
+  >
+    <path
+      class="header-wave1"
+      d="M0 32L10 35.8C20 39.7 40 47.3 60 49.3C80 51.3 100 47.7 120 45.5C140 43.3 160 42.7 180 42.3C200 42 220 42 240 42.2C260 42.3 280 42.7 300 43.8C320 45 340 47 360 48C380 49 400 49 420 48.3C440 47.7 460 46.3 480 44.2C500 42 520 39 540 40C560 41 580 46 600 47C620 48 640 45 660 42.3C680 39.7 700 37.3 720 38.3C740 39.3 760 43.7 780 43.8C800 44 820 40 840 40.5C860 41 880 46 900 47.7C920 49.3 940 47.7 950 46.8L960 46L960 0L950 0C940 0 920 0 900 0C880 0 860 0 840 0C820 0 800 0 780 0C760 0 740 0 720 0C700 0 680 0 660 0C640 0 620 0 600 0C580 0 560 0 540 0C520 0 500 0 480 0C460 0 440 0 420 0C400 0 380 0 360 0C340 0 320 0 300 0C280 0 260 0 240 0C220 0 200 0 180 0C160 0 140 0 120 0C100 0 80 0 60 0C40 0 20 0 10 0L0 0Z"
+      fill="#194fa3"
+    />
+    <path
+      class="header-wave2"
+      d="M0 27L10 29.7C20 32.3 40 37.7 60 41.2C80 44.7 100 46.3 120 44.8C140 43.3 160 38.7 180 36C200 33.3 220 32.7 240 32.8C260 33 280 34 300 34.2C320 34.3 340 33.7 360 32C380 30.3 400 27.7 420 30C440 32.3 460 39.7 480 43C500 46.3 520 45.7 540 43.3C560 41 580 37 600 36.8C620 36.7 640 40.3 660 41.2C680 42 700 40 720 37C740 34 760 30 780 29.3C800 28.7 820 31.3 840 33.8C860 36.3 880 38.7 900 41C920 43.3 940 45.7 950 46.8L960 48L960 0L950 0C940 0 920 0 900 0C880 0 860 0 840 0C820 0 800 0 780 0C760 0 740 0 720 0C700 0 680 0 660 0C640 0 620 0 600 0C580 0 560 0 540 0C520 0 500 0 480 0C460 0 440 0 420 0C400 0 380 0 360 0C340 0 320 0 300 0C280 0 260 0 240 0C220 0 200 0 180 0C160 0 140 0 120 0C100 0 80 0 60 0C40 0 20 0 10 0L0 0Z"
+      fill="#1968b6"
+    />
+    <path
+      class="header-wave3"
+      d="M0 37L10 36.2C20 35.3 40 33.7 60 30.8C80 28 100 24 120 23C140 22 160 24 180 23.7C200 23.3 220 20.7 240 19.8C260 19 280 20 300 20.2C320 20.3 340 19.7 360 21C380 22.3 400 25.7 420 26.5C440 27.3 460 25.7 480 24.7C500 23.7 520 23.3 540 24C560 24.7 580 26.3 600 28.3C620 30.3 640 32.7 660 30.8C680 29 700 23 720 22.3C740 21.7 760 26.3 780 29.2C800 32 820 33 840 32.7C860 32.3 880 30.7 900 28.2C920 25.7 940 22.3 950 20.7L960 19L960 0L950 0C940 0 920 0 900 0C880 0 860 0 840 0C820 0 800 0 780 0C760 0 740 0 720 0C700 0 680 0 660 0C640 0 620 0 600 0C580 0 560 0 540 0C520 0 500 0 480 0C460 0 440 0 420 0C400 0 380 0 360 0C340 0 320 0 300 0C280 0 260 0 240 0C220 0 200 0 180 0C160 0 140 0 120 0C100 0 80 0 60 0C40 0 20 0 10 0L0 0Z"
+      fill="#2780c6"
+    />
+    <path
+      width="100%"
+      class="header-wave4"
+      d="M0 22L10 21C20 20 40 18 60 17.7C80 17.3 100 18.7 120 20.3C140 22 160 24 180 23C200 22 220 18 240 16C260 14 280 14 300 14.5C320 15 340 16 360 16.3C380 16.7 400 16.3 420 16.5C440 16.7 460 17.3 480 18.5C500 19.7 520 21.3 540 20.5C560 19.7 580 16.3 600 15.5C620 14.7 640 16.3 660 16.8C680 17.3 700 16.7 720 16.2C740 15.7 760 15.3 780 17C800 18.7 820 22.3 840 22.2C860 22 880 18 900 15.7C920 13.3 940 12.7 950 12.3L960 12L960 0L950 0C940 0 920 0 900 0C880 0 860 0 840 0C820 0 800 0 780 0C760 0 740 0 720 0C700 0 680 0 660 0C640 0 620 0 600 0C580 0 560 0 540 0C520 0 500 0 480 0C460 0 440 0 420 0C400 0 380 0 360 0C340 0 320 0 300 0C280 0 260 0 240 0C220 0 200 0 180 0C160 0 140 0 120 0C100 0 80 0 60 0C40 0 20 0 10 0L0 0Z"
+      fill="#3e99d5"
+    />
+    <path
+      width="100%"
+      class="header-wave5"
+      d="M0 10L10 9.2C20 8.3 40 6.7 60 5.8C80 5 100 5 120 7C140 9 160 13 180 14.5C200 16 220 15 240 14.5C260 14 280 14 300 13.7C320 13.3 340 12.7 360 11.5C380 10.3 400 8.7 420 8.8C440 9 460 11 480 11C500 11 520 9 540 8.7C560 8.3 580 9.7 600 10.3C620 11 640 11 660 11.3C680 11.7 700 12.3 720 11.2C740 10 760 7 780 6.3C800 5.7 820 7.3 840 9.2C860 11 880 13 900 14C920 15 940 15 950 15L960 15L960 0L950 0C940 0 920 0 900 0C880 0 860 0 840 0C820 0 800 0 780 0C760 0 740 0 720 0C700 0 680 0 660 0C640 0 620 0 600 0C580 0 560 0 540 0C520 0 500 0 480 0C460 0 440 0 420 0C400 0 380 0 360 0C340 0 320 0 300 0C280 0 260 0 240 0C220 0 200 0 180 0C160 0 140 0 120 0C100 0 80 0 60 0C40 0 20 0 10 0L0 0Z"
+      fill="#59b1e3"
+    />
+  </svg>
+  <section
+    class="pt-3 pb-4"
+    id="count-stats"
+    style="z-index: 2 !important; position: relative;"
+  >
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-lg-9 border-radius-xl mt-n10 mx-auto py-3 blur shadow-blur"
+        >
+          <div class="row">
+            <div class="col-md-4 position-relative">
+
+              <div class="p-3 text-center">
+                <img src="assets\icons-values\decentralized.png" class="icons-image filter">
+                <h5 class="mt-3 fw-bold">Participant-centered</h5>
+
+              </div>
+              <hr class="vertical dark" />
+            </div>
+            <div class="col-md-4 position-relative">
+              <div class="p-3 text-center">
+                <img src="assets\icons-values\ai.png" class="icons-image filter">
+                <h5 class="mt-3 fw-bold">A.I. powered</h5>
+
+              </div>
+              <hr class="vertical dark" />
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 text-center">
+                <img src="assets\icons-values\healthcare.png" class="icons-image filter">
+                <h5 class="mt-3 fw-bold">User friendly</h5>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END HOME -->
+
+  <app-solutions></app-solutions>
+  <app-comparison></app-comparison>
+
+  <app-team></app-team>
+  <app-mission></app-mission>
+  <app-values></app-values>
+  <app-evolution></app-evolution>
+
+  <app-contact ></app-contact>
+  <app-footer></app-footer>
+</div>
+>>>>>>> 2d1363724c494d90a1388ef09a5d2b091bc858cd
