@@ -57,7 +57,8 @@ export function playerFactory() {
     FooterComponent,
     ScrollspyDirective,
     ReactiveFormsModule,
-    ComparisonComponent
+    ComparisonComponent,
+    FlowchartComponent
   ],
 })
 export class SharedModule {}
